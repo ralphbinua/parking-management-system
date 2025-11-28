@@ -1,0 +1,49 @@
+.form-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-card .card-body {
+  border-radius: 12px;
+}
+
+.or-divider {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.or-divider::before,
+.or-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #dee2e6;
+}
+
+.input-group-text {
+  border-color: #dee2e6;
+  cursor: pointer;
+}
+
+.form-control {
+  border-color: #dee2e6;
+}
+
+.form-control:focus {
+  border-color: #48acf0;
+  box-shadow: 0 0 0 0.2rem rgba(72, 172, 240, 0.25);
+}
+
+.btn-outline-secondary {
+  border-color: #dee2e6;
+  color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+  color: #495057;
+}
