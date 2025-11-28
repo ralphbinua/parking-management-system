@@ -6,6 +6,7 @@ import MotorParking from './pages/MotorParking.jsx'
 import PSBParking from './pages/PSBParking.jsx'
 import CarParkingOne from './pages/CarParkingOne.jsx'
 import CarParkingTwo from './pages/CarParkingTwo.jsx'
+import Faculty from './pages/Faculty.jsx'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/psbparking' element={<PSBParking/>}/>
         <Route path='/carparkingone' element={<CarParkingOne/>}/>
         <Route path='/carparkingtwo' element={<CarParkingTwo/>}/>
+        <Route path='/faculty' element={<Faculty/>}/>
       </Routes>
     </div>
   )
