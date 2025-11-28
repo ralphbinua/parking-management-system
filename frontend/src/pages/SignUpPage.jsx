@@ -46,7 +46,7 @@ const SignUpPage = () => {
           </form>
 
           <div className="text-center mt-4">
-              <small className="text-muted">Already have an account? <a href="login" className="text-decoration-none text-primary fw-semibold">Log in here</a></small>
+              <small className="text-muted">Already have an account? <a href="/login" className="text-decoration-none text-primary fw-semibold">Log in here</a></small>
           </div>
         </div>
       </div>

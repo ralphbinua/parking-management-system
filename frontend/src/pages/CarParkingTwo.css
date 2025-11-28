@@ -1,0 +1,65 @@
+body {
+            /* Light gray background color similar to the image's overall page */
+            background-color: #f8f9fa;
+        }
+        .navbar-custom {
+            /* Custom blue color for the navbar */
+            background-color: #007bff;
+        }
+        .card-profile {
+            /* Specific width for the profile card to match the image */
+            max-width: 250px;
+        }
+        .profile-icon {
+            /* Style for the large circle user icon */
+            font-size: 8rem;
+            color: #adb5bd; /* Light gray color */
+            border: 2px solid #adb5bd;
+            border-radius: 50%;
+            padding: 1rem;
+            width: fit-content;
+        }
+        .peak-hours-table .table > :not(caption) > * > * {
+            padding: .3rem .5rem; /* Reduce cell padding */
+            font-size: 0.85rem; /* Smaller text */
+        }
+        .area-selector-btn {
+            /* Style for the Select Area buttons */
+            text-align: left;
+            padding: 10px 15px;
+            margin-bottom: 5px;
+            background-color: #ffffff;
+            border-color: #dee2e6;
+            color: #343a40;
+        }
+        .area-selector-btn:hover {
+            background-color: #f8f9fa;
+        }
+        .area-selector-card {
+            /* Style for the main content card */
+            border: none;
+        }
+        .logo-placeholder {
+            height: 100px;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .slot-display {
+            /* Style for the large slot number display */
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #dee2e6;
+            padding: 20px;
+        }
+        .slot-number {
+            font-size: 10rem;
+            font-weight: 900;
+            line-height: 1;
+        }
