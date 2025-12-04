@@ -1,10 +1,22 @@
 import { Outlet, Link } from "react-router-dom";
-import "../dashboard/styles/DashboardLayout.css";
+import { useEffect, useState } from "react";
 
 const DashboardLayout = () => {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const savedUser = JSON.parse(localStorage.getItem("user"));
+    setUser(savedUser);
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    window.location.href = "/"; // redirect to login
+  };
+
   return (
     <>
-      {/* NAVBAR */}
+
       <nav className="navbar navbar-dark navbar-custom mb-4">
         <span className="navbar-brand ms-3 h3">ParkEra</span>
         <i className="bi bi-person-circle text-white fs-4 me-3"></i>
@@ -13,34 +25,39 @@ const DashboardLayout = () => {
       <div className="container-fluid">
         <div className="row g-4">
 
-          {/* LEFT SIDEBAR */}
           <div className="col-md-3">
             <div className="card card-profile shadow-sm p-3">
 
               <div className="text-center">
                 <i className="bi bi-person-circle profile-icon mb-3"></i>
-                <h6 className="mb-0">JUAN DELA CRUZ</h6>
-                <p className="text-muted small">juandelacruz@neu.edu.ph</p>
+                <h6 className="mb-0">{user?.full_name || "Loading..."}</h6>
               </div>
 
               <hr />
 
-              {/* AREA BUTTONS */}
               <div className="d-grid gap-2 mt-3">
-                <Link className="btn area-selector-btn" to="motorcycle">MOTORCYCLE</Link>
-                <Link className="btn area-selector-btn" to="car1">CAR PARKING 1</Link>
-                <Link className="btn area-selector-btn" to="car2">CAR PARKING 2</Link>
-                <Link className="btn area-selector-btn" to="faculty">FACULTY & STAFF</Link>
-                <Link className="btn area-selector-btn" to="psb">PSB PARKING</Link>
+                <Link className="btn area-selector-btn" to="MotorParking">MOTORCYCLE</Link>
+                <Link className="btn area-selector-btn" to="CarParkingOne">CAR PARKING 1</Link>
+                <Link className="btn area-selector-btn" to="CarParkingTwo">CAR PARKING 2</Link>
+                <Link className="btn area-selector-btn" to="Faculty">FACULTY & STAFF</Link>
+                <Link className="btn area-selector-btn" to="PSBParking">PSB PARKING</Link>
+              </div>
+
+              <hr />
+
+              <div className="d-grid">
+                <button className="btn btn-danger" onClick={handleLogout}>
+                  Logout
+                </button>
               </div>
 
             </div>
           </div>
 
-          {/* RIGHT SIDE CONTENT */}
           <div className="col-md-9">
-            <Outlet /> {/* Nested Route Content Here */}
+            <Outlet />
           </div>
+
         </div>
       </div>
     </>
