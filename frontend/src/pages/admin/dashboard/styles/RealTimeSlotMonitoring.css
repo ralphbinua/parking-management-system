@@ -1,0 +1,70 @@
+/* OUTER WRAPPER - LEFT ALIGNED + WIDE SPACE */
+.rt-wrapper {
+  display: flex;
+  justify-content: flex-start;   /* align card to the left */
+  padding-top: 3rem;
+  padding-left: 3rem;
+  width: 100%;
+}
+
+/* MAIN CARD CONTAINER - MAKE IT WIDE */
+.rt-card {
+  background: #ffffff;
+  padding: 2.5rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  width: 100%;                /* expand fully */
+  max-width: 1100px;          /* keeps it from becoming too wide */
+  border: 1px solid #e0e0e0;
+}
+
+/* TITLE */
+.rt-title {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+/* LIST LAYOUT */
+.rt-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+/* ROW (LABEL LEFT + VALUE RIGHT) */
+.rt-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LEFT BUTTON */
+.rt-label {
+  padding: 0.7rem 1rem;
+  border: 2px solid #0d6efd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #0d6efd;
+  background: white;
+  font-weight: 700;
+  width: 250px;             /* wider buttons */
+  text-align: center;
+  cursor: pointer;
+}
+
+/* RIGHT VALUE BOX */
+.rt-value {
+  padding: 0.7rem 1.2rem;
+  background: white;
+  border: 2px solid #444;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  min-width: 100px;
+  text-align: center;
+}

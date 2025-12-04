@@ -39,7 +39,7 @@ const DashboardLayout = () => {
                 <Link className="btn area-selector-btn" to="MotorParking">MOTORCYCLE</Link>
                 <Link className="btn area-selector-btn" to="CarParkingOne">CAR PARKING 1</Link>
                 <Link className="btn area-selector-btn" to="CarParkingTwo">CAR PARKING 2</Link>
-                <Link className="btn area-selector-btn" to="Faculty">FACULTY & STAFF</Link>
+                {/*<Link className="btn area-selector-btn" to="Faculty">FACULTY & STAFF</Link>*/}
                 <Link className="btn area-selector-btn" to="PSBParking">PSB PARKING</Link>
               </div>
 

@@ -1,0 +1,160 @@
+/* MAIN WRAPPER – centered & full width */
+.container-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 5rem;
+
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+}
+
+/* LEFT SIDE */
+.area-selector {
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+}
+
+.selector-title {
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.area-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.area-btn {
+  padding: 0.8rem 1rem;
+  background: #fff;
+  border: 2px solid #0d6efd;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #0d6efd;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.area-btn:hover {
+  background: #e7f1ff;
+}
+
+.area-btn.active {
+  background: #0d6efd;
+  color: white;
+}
+
+/* RIGHT SIDE – COUNTER BOX */
+.counter-box {
+  width: 330px;
+  height: 420px;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+  padding-top: 1.5rem;
+  text-align: center;
+  background: #fafafa;
+  position: relative;
+}
+
+.area-label {
+  font-size: 0.9rem;
+  color: #555;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.area-name {
+  margin-top: 0.4rem;
+  font-size: 1.3rem;
+  color: #222;
+  text-transform: uppercase;
+}
+
+/* Current Count */
+.count-current {
+  font-size: 5.5rem;
+  margin-top: 1rem;
+  color: #0d6efd;
+  line-height: 5rem;
+}
+
+.divider {
+  width: 70%;
+  margin: 0.8rem auto;
+  border-top: 2px solid #ccc;
+}
+
+.count-capacity {
+  font-size: 2rem;
+  color: #444;
+  font-weight: 700;
+}
+
+/* + and - controls */
+.counter-controls {
+  position: absolute;
+  bottom: 4.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1.5rem;
+}
+
+.circle-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #0d6efd;
+  background: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #0d6efd;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.circle-btn:hover {
+  background: #0d6efd;
+  color: #fff;
+}
+
+.circle-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* DONE BUTTON */
+.done-btn {
+  position: absolute;
+  bottom: -3rem;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 0 0 10px 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.done-btn:hover {
+  background: #0b5ed7;
+}
