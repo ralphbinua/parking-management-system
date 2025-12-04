@@ -1,0 +1,67 @@
+/* Navbar custom styling */
+.navbar-custom {
+  background-color: #0d6efd; /* Bootstrap primary blue */
+  padding: 1rem 1.5rem;
+}
+
+/* Profile icon size and color */
+.profile-icon {
+  font-size: 4rem;
+  color: #6c757d; /* muted gray */
+}
+
+/* Card styling for sidebar */
+.card-profile {
+  border-radius: 0.5rem;
+}
+
+/* Area selector buttons */
+.area-selector-btn {
+  background-color: #f8f9fa; /* Bootstrap light */
+  border: 1px solid #dee2e6;
+  color: #212529;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  border-radius: 0.35rem;
+  transition: background-color 0.2s, color 0.2s;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 0.05);
+  text-align: center;
+}
+
+/* Space buttons vertically */
+.area-selector-btn + .area-selector-btn {
+  margin-top: 0.5rem;
+}
+
+/* Hover effect */
+.area-selector-btn:hover {
+  background-color: #0d6efd;
+  color: white;
+  text-decoration: none;
+}
+
+/* Active button styling (simulate with class) */
+.area-selector-btn.active,
+.area-selector-btn:focus {
+  background-color: #0d6efd;
+  color: white;
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
+}
+
+/* Optional: Adjust sidebar card padding */
+.card-profile {
+  padding: 1.5rem;
+}
+
+/* Responsive: Ensure buttons full width */
+.area-selector-btn {
+  width: 100%;
+  display: block;
+}
+
+/* Link style override */
+a.area-selector-btn {
+  display: block;
+}

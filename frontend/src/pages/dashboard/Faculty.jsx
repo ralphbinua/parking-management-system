@@ -1,7 +1,7 @@
 import React from 'react'
-import './MotorParking.css'
+import '../dashboard/styles/parking.css'
 
-const MotorParking = () => {
+const Faculty = () => {
   return (
     <>
     <nav className="navbar navbar-expand-lg navbar-dark navbar-custom mb-4">
@@ -62,10 +62,10 @@ const MotorParking = () => {
 
                             <h6 className="text-center text-uppercase mb-3">Select Area</h6>
 
-                            <button className="btn area-selector-btn active w-100">MOTORCYCLE</button>
+                            <button className="btn area-selector-btn w-100">MOTORCYCLE</button>
                             <button className="btn area-selector-btn w-100">CAR PARKING 1</button>
                             <button className="btn area-selector-btn w-100">CAR PARKING 2</button>
-                            <button className="btn area-selector-btn w-100">FACULTY AND STAFF</button>
+                            <button className="btn area-selector-btn w-100 active">FACULTY AND STAFF</button>
                             <button className="btn area-selector-btn w-100">PSB PARKING</button>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ const MotorParking = () => {
                         <div className="card p-3 shadow-sm">
                             <div className="d-flex justify-content-between align-items-center mb-3">
                                 <h6 className="text-uppercase text-muted mb-0">Area</h6>
-                                <span className="badge bg-secondary text-white p-2">MOTORCYCLE</span>
+                                <span className="badge bg-secondary text-white p-2">Faculty and Staff</span>
                             </div>
 
                             <div className="slot-display bg-white">
@@ -93,4 +93,4 @@ const MotorParking = () => {
   )
 }
 
-export default MotorParking
+export default Faculty
